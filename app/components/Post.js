@@ -16,8 +16,8 @@ const Post = () => {
   }, []);
   return (
     <div>
-      {content.map((item) => (
-        <div >
+      {content.map((item, index) => (
+        <div key={index}>
           <h1>{item.tool}</h1>
           <p>{item.description}</p>
 
